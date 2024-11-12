@@ -11,10 +11,14 @@
             "id": "f6e78c45b3e1c58d",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Introduction/CONTAINER.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "CONTAINER"
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Introduction/CONTAINER.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for CONTAINER"
             }
           },
           {
@@ -107,11 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Introduction/CONTAINER.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from CONTAINER"
             }
           },
           {
@@ -132,9 +138,11 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {},
+              "state": {
+                "file": "Introduction/CONTAINER.md"
+              },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of CONTAINER"
             }
           }
         ]
@@ -156,10 +164,10 @@
   },
   "active": "f6e78c45b3e1c58d",
   "lastOpenFiles": [
-    "IMMAGINE.md",
-    "Introduction/INTRODUZIONE A KUBERNATES.md",
     "Introduction/IMMAGINE.md",
+    "Introduction/INTRODUZIONE A KUBERNATES.md",
     "Introduction/CONTAINER.md",
+    "IMMAGINE.md",
     "CONTAINER.md",
     "INTRODUZIONE A KUBERNATES.md",
     "DEPLOYMENT.md",

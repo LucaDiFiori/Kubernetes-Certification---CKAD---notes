@@ -19,6 +19,9 @@ I container sono una tecnologia di **virtualizzazione leggera** che consente di 
 
 5. **Efficienza rispetto alle macchine virtuali**: I container sono molto più leggeri delle macchine virtuali (VM). Mentre una VM include un intero sistema operativo guest, un container condivide il kernel del sistema operativo dell'host, utilizzando solo una frazione delle risorse necessarie a una VM. Ciò consente un avvio più rapido e un utilizzo più efficiente di CPU e memoria.
 
+
+***
+
 # Componenti principali dei Container
 1. **Docker e Docker Engine**: Docker è la piattaforma più popolare per creare e gestire container. 
    Include strumenti per 
@@ -43,11 +46,16 @@ I container sono una tecnologia di **virtualizzazione leggera** che consente di 
       
    4. **Volume**: I container sono, per natura, _stateless_, il che significa che i dati creati all'interno di un container vanno persi quando il container viene distrutto. I _volumi_ sono una soluzione per la persistenza dei dati, permettendo di montare un percorso di archiviazione persistente all'interno del container, assicurando che i dati sopravvivano anche dopo la terminazione del container.
 
+
+***
+
 # Come funzionano i Container
 Un container opera su un sistema host e interagisce con il kernel attraverso:
 
 - **Cgroups (Control Groups)**: Regolano le risorse assegnate ai container (CPU, memoria, I/O, ecc.), impedendo che un container consumi più risorse di quanto consentito.
 - **[[NAMESPACE]]**: Forniscono isolamento tra i processi e le risorse del container e il sistema host, creando uno spazio indipendente per processi, utenti, rete, ecc.
+
+***
 
 # Vantaggi dei Container
 - **Coerenza tra ambienti**: Un'applicazione containerizzata si comporta allo stesso modo in ambienti diversi, riducendo problemi legati a differenze di configurazione.
