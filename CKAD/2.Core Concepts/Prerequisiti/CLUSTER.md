@@ -1,0 +1,1 @@
+Un **cluster** in Kubernetes è un insieme di macchine (fisiche o virtuali) che lavorano insieme per eseguire e gestire applicazioni containerizzate. Il cluster rappresenta l'ambiente esecutivo in cui i container vengono orchestrati. Ogni cluster è formato da diversi nodi, che si suddividono in **master node** e **worker node**.
