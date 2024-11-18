@@ -1,10 +1,12 @@
 ***
 # Fonti
 - https://docs.docker.com/build/concepts/dockerfile/#docker-images
+- https://www.techtarget.com/searchitoperations/definition/Docker-image
   
 ***
 # Table of content
 - [Struttura di un'immagine Docker](#struttura-di-un'immagine-docker)
+- [Differenza fra Dockerfile e Docker image](#Differenza-fra-Dockerfile-e-Docker-image)
 - [Dettagli delle Immagini di Container](#dettagli-delle-immagini-di-container)
 - [Costruzione di un'immagine tramite Dockerfile](#Costruzione-di-un'immagine-tramite-Dockerfile)
 - [Registri delle Immagini (Container Registries)](Registri-delle-Immagini-(Container-Registries))
@@ -14,9 +16,66 @@
 
 ***
 
-Un'immagine di container è un **file statico e immutabile** che contiene **tutto il necessario per eseguire un'applicazione, inclusi il codice, le librerie, le dipendenze, le variabili di ambiente, e i comandi di avvio**. L'immagine è il modello da cui vengono creati i container, e la sua natura immutabile garantisce coerenza e portabilità tra ambienti diversi.
+Un'immagine di container è un **file statico e immutabile** che contiene **tutto il necessario per eseguire un'applicazione, inclusi il codice, le librerie, le dipendenze, le variabili di ambiente, e i comandi di avvio**. 
+(es file.iso)
+
+L'immagine è il modello da cui vengono creati i container, e la sua natura immutabile garantisce coerenza e portabilità tra ambienti diversi.
 Possiamo immaginarla come un'"istantanea" di un ambiente di esecuzione
 
+
+***
+# Differenza fra Dockerfile e Docker image
+
+## 1. Dockerfile
+Un **Dockerfile** è un file di testo che contiene una serie di istruzioni che definiscono come creare un'immagine Docker. È essenzialmente un _template_ o una "ricetta" che Docker utilizza per costruire un'immagine. Ogni istruzione nel Dockerfile specifica un passo che deve essere eseguito durante la creazione dell'immagine, come ad esempio l'installazione di pacchetti, la copia di file o la configurazione di variabili di ambiente.
+
+**Esempio di un Dockerfile**:
+```dockerfile
+# Usa un'immagine di base di Python
+FROM python:3.8
+
+# Imposta la directory di lavoro
+WORKDIR /app
+
+# Copia il file requirements.txt nel container
+COPY requirements.txt .
+
+# Installa le dipendenze
+RUN pip install -r requirements.txt
+
+# Copia l'applicazione nel container
+COPY . .
+
+# Definisce il comando da eseguire quando il container si avvia
+CMD ["python", "app.py"]
+```
+**In sintesi**: Il Dockerfile è il **file di configurazione** che definisce come costruire l'immagine.
+
+## 2. Docker image
+Un'**immagine Docker** è il **risultato finale** della costruzione di un Dockerfile. È un'istantanea (snapshot) di un sistema di file e delle configurazioni che sono necessari per eseguire un'applicazione. Le immagini sono leggere, immutabili e possono essere riutilizzate per creare container identici su qualsiasi sistema che esegua Docker.
+
+**L'immagine Docker contiene**:
+- Il sistema operativo di base.
+- I file dell'applicazione.
+- Le dipendenze necessarie.
+- La configurazione e le impostazioni definite nel Dockerfile.
+
+Una volta che hai creato un'immagine, puoi usarla per eseguire uno o più container. Gli **immagini Docker** vengono distribuite tramite Docker Hub o altri registry, e possono essere condivise e riutilizzate da altri utenti.
+
+**In sintesi**: L'immagine Docker è un **file eseguibile** che puoi usare per creare container.
+
+### Relazione tra Dockerfile e Docker Image:
+1. **Dockerfile** è un _file di configurazione_.
+2. **Docker Image** è il _prodotto_ finale costruito da quel file di configurazione.
+
+Quando esegui il comando `docker build` utilizzando un Dockerfile, Docker crea un'immagine che può essere poi utilizzata per creare uno o più container tramite il comando `docker run`.
+
+### Flusso di lavoro:
+1. Scrivi un **Dockerfile** con le istruzioni necessarie.
+2. Costruisci l'**immagine Docker** eseguendo `docker build`.
+3. Esegui un **container** utilizzando l'immagine con `docker run`.
+
+***
 # Struttura di un'immagine Docker:
 - **[[LAYER]] (Livelli)**: Ogni immagine Docker è composta da più livelli. Ogni livello rappresenta una modifica o un'istruzione eseguita durante il processo di build (ad esempio, l'installazione di una libreria o la copia di file). I layer sono impilati in sequenza per creare l'immagine finale.
     
@@ -123,9 +182,16 @@ Quando un container viene avviato da un'immagine, il runtime del container prend
 
 ***
 
-# Differenze tra Immagini e Container
-- **Immagine**: Un file immutabile che funge da blueprint per creare un container.
-- **Container**: Un'istanza runtime di un'immagine. Può essere avviato, arrestato e distrutto. Qualsiasi modifica fatta al file system durante l'esecuzione del container è temporanea e va persa quando il container viene eliminato (a meno che non si usino volumi).
+ # Differenze tra Immagini e Container
+- **Immagine**: 
+	- Un file immutabile che funge da blueprint per creare un container.
+- **Container**: 
+	- E' un runtime envirorment virtualizzato per le immagini
+	- Fornisce il file sistem virtualizzato, envirorment configs etc per poter
+	  runnar l'applicazione
+	- Un'istanza runtime di un'immagine. 
+	- Può essere avviato, arrestato e distrutto. 
+	- Qualsiasi modifica fatta al file system durante l'esecuzione del container è temporanea e va persa quando il container viene eliminato (a meno che non si usino volumi).
 
 
 In sintesi, le immagini di container rappresentano la base su cui si costruiscono i container, offrendo coerenza e portabilità per applicazioni in diversi ambienti di esecuzione.

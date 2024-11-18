@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "2804481afdf42bb6",
+        "id": "447fabe81d5abfd9",
         "type": "tabs",
         "children": [
           {
-            "id": "f6de0706e08f382a",
+            "id": "63a14abd2932988d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2.Core Concepts/Prerequisiti/NODE.md",
+                "file": "2.Core Concepts/Prerequisiti/PODS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "NODE"
+              "title": "PODS"
+            }
+          },
+          {
+            "id": "a357435dc972ded8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2.Core Concepts/Prerequisiti/PODS.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "PODS"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -43,7 +58,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "Esplora risorse"
             }
           },
           {
@@ -154,35 +169,44 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "switcher:Apri selezione rapida": false,
+      "graph:Apri vista grafo": false,
+      "canvas:Crea nuova lavagna": false,
+      "daily-notes:Apri nota del giorno": false,
+      "templates:Inserisci modello": false,
+      "command-palette:Apri riquadro comandi": false
     }
   },
-  "active": "f6de0706e08f382a",
+  "active": "a357435dc972ded8",
   "lastOpenFiles": [
-    "1.Introduction/INTRODUZIONE A KUBERNATES.md",
-    "2.Core Concepts/Prerequisiti/COMPONENTI.md",
-    "2.Core Concepts/Prerequisiti/CONTAINER.md",
-    "2.Core Concepts/Prerequisiti/IMMAGINE.md",
+    "img/Pasted image 20241118154521.png",
+    "img/Pasted image 20241118153635.png",
+    "NAMESPACE.md",
+    "2.Core Concepts/Prerequisiti/PODS.md",
+    "Pasted image 20241118153608.png",
+    "img/Pasted image 20241118153039.png",
     "2.Core Concepts/Prerequisiti/NODE.md",
-    "2.Core Concepts/Prerequisiti/LAYER.md",
+    "2.Core Concepts/Prerequisiti/CONTAINER.md",
+    "2.Core Concepts/Prerequisiti/COMPONENTI.md",
+    "2.Core Concepts/2.1 Docker vs ContainerD.md",
+    "img/Pasted image 20241118121731.png",
+    "img",
+    "img/Pasted image 20241118122122.png",
+    "2.Core Concepts/Prerequisiti/IMMAGINE.md",
     "2.Core Concepts/Prerequisiti/KUBELET.md",
+    "1.Introduction/INTRODUZIONE A KUBERNATES.md",
+    "2.Core Concepts/Prerequisiti/LAYER.md",
     "2.Core Concepts/Prerequisiti/KUBECTL.md",
     "2.Core Concepts/Prerequisiti/CLUSTER.md",
     "2.Core Concepts/Prerequisiti/RUNTIME.md",
     "2.Core Concepts/Prerequisiti/0.Prerequisiti.md",
     "2.Core Concepts/Prerequisiti/Control Plane.md",
-    "2.Core Concepts/Prerequisiti/WhatsApp Image 2024-11-13 at 15.12.26.jpeg",
-    "2.Core Concepts/Prerequisiti/Pasted image 20241113141527.png",
+    "img/WhatsApp Image 2024-11-13 at 15.12.26.jpeg",
+    "img/Pasted image 20241113141527.png",
     "kublet.md",
     "2.Core Concepts/1.Kubernetes Architecture.md",
     "Master Node.md",
     "2.Core Concepts/Prerequisiti",
-    "NAMESPACE.md",
     "2.Core Concepts",
     "IMMAGINE.md",
     "CONTAINER.md",
