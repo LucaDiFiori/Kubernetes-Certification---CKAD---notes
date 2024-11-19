@@ -34,21 +34,6 @@ Quello che non voglio fare è aggiungere una nuova istanza (container) al pod es
 ![[Pasted image 20241118154521.png]]
 
 **Importante**: Da questo esempio vediamo che i pod ed i container hanno una relazione uno a uno 
-
-
-
-***
-
-# Comandi utili:
-
-- **`kubectl run nome_pod --image nome_image `**:  Usato per **creare un pod** con il nome *nome_pod* che esegue l'immagine ufficiale del container *nome_container* scaricato da docker hub
-
--  **`kubectl get pods`**: Questo comando resituisce l'elenco di pods attualmente presenti nel cluster, mostrandone lo stato e altre informazioni quali:
-	-  NAME: Nome del pod
-	- READY: Indica il numero di container "pronti" nel Pod rispetto al numero totale di container.
-	- STATUS: Indica lo stato attuale del Pod.
-	- RESTARTS: Mostra il numero di riavvii che un container nel Pod ha avuto.
-	- AGE: Indica da quanto tempo il Pod è stato creato
   
   
 
@@ -221,3 +206,54 @@ I Pod sono l'elemento fondamentale di Kubernetes per l'esecuzione delle applicaz
 #### 6. **Gestione dei fallimenti e resilienza**
 - **Pod**: Quando un container all'interno di un Pod fallisce, Kubernetes può terminare e riavviare l'intero Pod, mantenendo il sistema in uno stato coerente. Se il Pod è parte di un ReplicaSet o Deployment, Kubernetes garantirà che il numero desiderato di Pod sia sempre attivo.
 - **Network di container**: Se i container non sono legati insieme da un Pod, la gestione dei fallimenti e il riavvio di container diventano più complessi. Ogni container potrebbe fallire separatamente, e dovresti gestire manualmente la sostituzione dei container senza un sistema centralizzato di gestione del ciclo di vita.
+
+
+***
+
+
+
+# Comandi utili:
+
+- **`kubectl run <nome-pod> --image <nome-image> `**:  Usato per **creare un pod** con il nome *nome_pod* che esegue l'immagine ufficiale del container *nome_container* scaricato da docker hub
+
+-  **`kubectl get pods`**: Questo comando resituisce l'elenco di pods attualmente presenti nel cluster, mostrandone lo stato e altre informazioni quali:
+	-  NAME: Nome del pod
+	- READY: Indica il numero di container "pronti" nel Pod rispetto al numero totale di container.
+	- STATUS: Indica lo stato attuale del Pod.
+	- RESTARTS: Mostra il numero di riavvii che un container nel Pod ha avuto.
+	- AGE: Indica da quanto tempo il Pod è stato creato
+
+
+
+-  **`kubectl describe pod <nome-pod>`**: Fornisce una descrizione **dettagliata** del pod `<nome-pod>`
+	- `kubectl describe pod`: Senza specifiche fornisce info dettagliate su tutti i pod di un namespace
+
+
+
+- **`kubectl get pod <nome-pod> -o wide`**: Fornisce **informazioni dettagliate ma sintetiche** sullo stato di un pod.
+  Info fornite:
+	  - **NAME**: Nome del Pod.
+	  - **READY**: Stato dei container nel Pod.
+	  - **STATUS**: Stato attuale del Pod.
+	  - **RESTARTS**: Numero di volte che uno o più container del Pod sono stati riavviati.
+	  - **AGE**: Tempo trascorso dalla creazione del Pod.
+	  - **IP**: L'indirizzo IP assegnato al Pod all'interno del cluster.
+	  - **NODE**: Nome del nodo su cui il Pod è schedulato.
+	  - **NOMINATED NODE**: (Facoltativo) Nodo candidato per lo spostamento del Pod in caso di rischedulazione.
+	  - **READINESS GATES**: (Facoltativo) Informazioni su eventuali condizioni extra che devono essere soddisfatte prima che il Pod venga considerato pronto.
+
+
+
+- **`kubectl delete <nome-pod>`**: viene utilizzato per eliminare un Pod specifico in Kubernetes. Questo comando rimuove il Pod dal cluster e libera le risorse ad esso associate.
+
+
+
+- **`kubectl create -f <nome_file.yml>`**: crea risorse in un cluster Kubernetes a partire da un file di configurazione YAML o JSON.
+  Nel caso di un pod lo crea e tenta di eseguirlo 
+
+
+
+- **`kubectl apply`**:utilizzato per **applicare una configurazione** a uno o più oggetti del cluster Kubernetes. Questo comando legge un file di configurazione (di solito in formato YAML o JSON) e crea, aggiorna o lascia invariati gli oggetti del cluster
+  Es. `kubectl apply -f <file-configurazione>`
+
+- **`kubectl edit pod <nome-redis>`**: utilizzato per **modificare direttamente** la configurazione di un pod esistente in Kubernetes, aprendo l'editor predefinito

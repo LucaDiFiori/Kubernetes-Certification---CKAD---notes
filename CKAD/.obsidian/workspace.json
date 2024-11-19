@@ -8,21 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "63a14abd2932988d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2.Core Concepts/Prerequisiti/PODS.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "PODS"
-            }
-          },
-          {
-            "id": "a357435dc972ded8",
+            "id": "e83a70f75672877f",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -35,8 +21,7 @@
               "title": "PODS"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,7 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 326.5047149658203
+    "width": 200
   },
   "right": {
     "id": "a8b79e598679e8c0",
@@ -177,18 +162,24 @@
       "command-palette:Apri riquadro comandi": false
     }
   },
-  "active": "2ff4925e866a5120",
+  "active": "e83a70f75672877f",
   "lastOpenFiles": [
+    "2.Core Concepts/2.3 Pods with YAML.md",
+    "2.Core Concepts/Prerequisiti/PODS.md",
+    "2.Core Concepts/Prerequisiti/YAML.md",
+    "2.Core Concepts/2.2 YAML in Kubernetes.md",
+    "Pasted image 20241119113549.png",
+    "img/Pasted image 20241119110747.png",
+    "img/Pasted image 20241119110210.png",
+    "2.Core Concepts/2.1 Docker vs ContainerD.md",
     "img/Pasted image 20241118154521.png",
     "img/Pasted image 20241118153635.png",
     "2.Core Concepts/Prerequisiti/NAMESPACE.md",
-    "2.Core Concepts/Prerequisiti/PODS.md",
     "Pasted image 20241118153608.png",
     "img/Pasted image 20241118153039.png",
     "2.Core Concepts/Prerequisiti/NODE.md",
     "2.Core Concepts/Prerequisiti/CONTAINER.md",
     "2.Core Concepts/Prerequisiti/COMPONENTI.md",
-    "2.Core Concepts/2.1 Docker vs ContainerD.md",
     "img/Pasted image 20241118121731.png",
     "img",
     "img/Pasted image 20241118122122.png",
@@ -202,7 +193,6 @@
     "2.Core Concepts/Prerequisiti/0.Prerequisiti.md",
     "2.Core Concepts/Prerequisiti/Control Plane.md",
     "img/WhatsApp Image 2024-11-13 at 15.12.26.jpeg",
-    "img/Pasted image 20241113141527.png",
     "kublet.md",
     "2.Core Concepts/1.Kubernetes Architecture.md",
     "Master Node.md",
@@ -212,7 +202,6 @@
     "CONTAINER.md",
     "INTRODUZIONE A KUBERNATES.md",
     "DEPLOYMENT.md",
-    "Welcome.md",
     "1.Introduction"
   ]
 }
