@@ -213,10 +213,18 @@ I Pod sono l'elemento fondamentale di Kubernetes per l'esecuzione delle applicaz
 
 
 # Comandi utili:
+1.
+```bash
+kubectl run <nome-pod> --image <nome-image>
+```
+-  Usato per **creare un pod** con il nome *nome_pod* che esegue l'immagine ufficiale del container *nome_container* scaricato da docker hub
 
-- **`kubectl run <nome-pod> --image <nome-image> `**:  Usato per **creare un pod** con il nome *nome_pod* che esegue l'immagine ufficiale del container *nome_container* scaricato da docker hub
 
--  **`kubectl get pods`**: Questo comando resituisce l'elenco di pods attualmente presenti nel cluster, mostrandone lo stato e altre informazioni quali:
+2.
+```bash
+kubectl get pods
+```
+-  resituisce l'elenco di pods attualmente presenti nel cluster, mostrandone lo stato e altre informazioni quali:
 	-  NAME: Nome del pod
 	- READY: Indica il numero di container "pronti" nel Pod rispetto al numero totale di container.
 	- STATUS: Indica lo stato attuale del Pod.
@@ -224,14 +232,22 @@ I Pod sono l'elemento fondamentale di Kubernetes per l'esecuzione delle applicaz
 	- AGE: Indica da quanto tempo il Pod è stato creato
 
 
+3.
+```bash
+kubectl describe pod <nome-pod>
+```
+-  Fornisce una descrizione **dettagliata** del pod `<nome-pod>`
+  
+-  `kubectl describe pod`: Senza specifiche fornisce info dettagliate su tutti i pod di un namespace
 
--  **`kubectl describe pod <nome-pod>`**: Fornisce una descrizione **dettagliata** del pod `<nome-pod>`
-	- `kubectl describe pod`: Senza specifiche fornisce info dettagliate su tutti i pod di un namespace
 
-
-
-- **`kubectl get pod <nome-pod> -o wide`**: Fornisce **informazioni dettagliate ma sintetiche** sullo stato di un pod.
-  Info fornite:
+4.
+```bash
+kubectl get pod <nome-pod> -o wide
+```
+- Fornisce **informazioni dettagliate ma sintetiche** sullo stato di un pod.
+  
+- Info fornite:
 	  - **NAME**: Nome del Pod.
 	  - **READY**: Stato dei container nel Pod.
 	  - **STATUS**: Stato attuale del Pod.
@@ -244,16 +260,53 @@ I Pod sono l'elemento fondamentale di Kubernetes per l'esecuzione delle applicaz
 
 
 
-- **`kubectl delete <nome-pod>`**: viene utilizzato per eliminare un Pod specifico in Kubernetes. Questo comando rimuove il Pod dal cluster e libera le risorse ad esso associate.
+5.
+```bash
+kubectl delete <nome-pod>
+```
+- utilizzato per eliminare un Pod specifico in Kubernetes. Questo comando rimuove il Pod dal cluster e libera le risorse ad esso associate.
 
 
 
-- **`kubectl create -f <nome_file.yml>`**: crea risorse in un cluster Kubernetes a partire da un file di configurazione YAML o JSON.
+6.
+```bash
+kubectl create -f <nome_file.yml>
+```
+- crea risorse in un cluster Kubernetes a partire da un file di configurazione YAML o JSON.
   Nel caso di un pod lo crea e tenta di eseguirlo 
 
+7.
+```bash
+kubectl run <nome-pod> --image=<nome-img> --dry-run -o yaml
+```
+-  Il comando `kubectl run` con le opzioni `--dry-run` e `-o yaml` viene utilizzato per **generare un file YAML** di configurazione basato sui parametri specificati, senza effettivamente creare una risorsa nel cluster. È molto utile per ottenere un file YAML che puoi modificare e utilizzare successivamente con `kubectl apply`.
 
 
-- **`kubectl apply`**:utilizzato per **applicare una configurazione** a uno o più oggetti del cluster Kubernetes. Questo comando legge un file di configurazione (di solito in formato YAML o JSON) e crea, aggiorna o lascia invariati gli oggetti del cluster
+8.
+```bash
+kubectl apply -f <file-configurazione>
+```
+- utilizzato per **applicare una configurazione** a uno o più oggetti del cluster Kubernetes. Questo comando legge un file di configurazione (di solito in formato YAML o JSON) e crea, aggiorna o lascia invariati gli oggetti del cluster
   Es. `kubectl apply -f <file-configurazione>`
 
-- **`kubectl edit pod <nome-redis>`**: utilizzato per **modificare direttamente** la configurazione di un pod esistente in Kubernetes, aprendo l'editor predefinito
+
+9.
+```bash
+kubectl edit pod <nome-redis>
+```
+-  utilizzato per **modificare direttamente** la configurazione di un pod esistente in Kubernetes, aprendo l'editor predefinito
+
+
+
+
+- Note **edit pods**: In any of the practical quizzes, if you are asked to **edit an existing POD**, please note the following:
+
+	- If you are given a pod definition file, edit that file and use it to create a new pod.
+    
+	- **If you are not given a pod definition file**, you may extract the definition to a file using the below command:
+    
+	    `kubectl get pod <pod-name> -o yaml > pod-definition.yaml`
+    
+	    Then edit the file to make the necessary changes, delete, and re-create the pod.
+    
+	- To modify the properties of the pod, you can utilize the `kubectl edit pod <pod-name>` command. Please note that only the properties listed below are editable.

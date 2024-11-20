@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "447fabe81d5abfd9",
+        "id": "254004c7b5c3163d",
         "type": "tabs",
         "children": [
           {
-            "id": "e83a70f75672877f",
+            "id": "52ce5a1907db1cf2",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "2.Core Concepts/Prerequisiti/PODS.md",
-                "mode": "source",
-                "source": false
+                "file": "img/Pasted image 20241120161716.png"
               },
-              "icon": "lucide-file",
-              "title": "PODS"
+              "icon": "lucide-image",
+              "title": "Pasted image 20241120161716"
             }
           }
         ]
@@ -77,7 +75,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 326.5
   },
   "right": {
     "id": "a8b79e598679e8c0",
@@ -162,46 +160,46 @@
       "command-palette:Apri riquadro comandi": false
     }
   },
-  "active": "e83a70f75672877f",
+  "active": "2ff4925e866a5120",
   "lastOpenFiles": [
-    "2.Core Concepts/2.3 Pods with YAML.md",
+    "2.Core Concepts/Prerequisiti/DEPLOYMENTS.md",
+    "2.Core Concepts/Prerequisiti/REPLICASET.md",
+    "img/Pasted image 20241120161716.png",
+    "img/Pasted image 20241120161122.png",
+    "img/Pasted image 20241120155224.png",
+    "2.Core Concepts/Prerequisiti/IMMAGINE.md",
+    "0.Prerequisiti.md",
+    "img/Pasted image 20241120124251.png",
+    "img/Pasted image 20241120122816.png",
+    "img/Pasted image 20241120114331.png",
+    "Pasted image 20241120122702.png",
     "2.Core Concepts/Prerequisiti/PODS.md",
-    "2.Core Concepts/Prerequisiti/YAML.md",
+    "Pasted image 20241120113605.png",
+    "img/Pasted image 20241120113752.png",
+    "img/Pasted image 20241120113749.png",
     "2.Core Concepts/2.2 YAML in Kubernetes.md",
-    "Pasted image 20241119113549.png",
-    "img/Pasted image 20241119110747.png",
-    "img/Pasted image 20241119110210.png",
+    "2.Core Concepts/Prerequisiti/KUBERNETES CONTROLLERS.md",
+    "2.Core Concepts/Prerequisiti/Control Plane.md",
+    "2.Core Concepts/2.3 Pods with YAML.md",
+    "2.Core Concepts/Prerequisiti/YAML.md",
     "2.Core Concepts/2.1 Docker vs ContainerD.md",
-    "img/Pasted image 20241118154521.png",
-    "img/Pasted image 20241118153635.png",
     "2.Core Concepts/Prerequisiti/NAMESPACE.md",
-    "Pasted image 20241118153608.png",
-    "img/Pasted image 20241118153039.png",
     "2.Core Concepts/Prerequisiti/NODE.md",
     "2.Core Concepts/Prerequisiti/CONTAINER.md",
     "2.Core Concepts/Prerequisiti/COMPONENTI.md",
-    "img/Pasted image 20241118121731.png",
     "img",
-    "img/Pasted image 20241118122122.png",
-    "2.Core Concepts/Prerequisiti/IMMAGINE.md",
     "2.Core Concepts/Prerequisiti/KUBELET.md",
     "1.Introduction/INTRODUZIONE A KUBERNATES.md",
     "2.Core Concepts/Prerequisiti/LAYER.md",
     "2.Core Concepts/Prerequisiti/KUBECTL.md",
     "2.Core Concepts/Prerequisiti/CLUSTER.md",
     "2.Core Concepts/Prerequisiti/RUNTIME.md",
-    "2.Core Concepts/Prerequisiti/0.Prerequisiti.md",
-    "2.Core Concepts/Prerequisiti/Control Plane.md",
-    "img/WhatsApp Image 2024-11-13 at 15.12.26.jpeg",
     "kublet.md",
     "2.Core Concepts/1.Kubernetes Architecture.md",
     "Master Node.md",
     "2.Core Concepts/Prerequisiti",
     "2.Core Concepts",
     "IMMAGINE.md",
-    "CONTAINER.md",
-    "INTRODUZIONE A KUBERNATES.md",
-    "DEPLOYMENT.md",
     "1.Introduction"
   ]
 }
