@@ -219,7 +219,7 @@ kubectl create -f <nome-file.yml>
 Simile al Replica Controller ma con alcune differenze:
 
 1) **apliVersion**: apps/v1
-2) **selector**: Un file di definizione per un replica set richiede un **selector** (figlio di **spec**). Questa sezione aiuta il replicaSet a identificare **quali pods ricadono sotto di essa**
+2) [[SELECTOR]]: Un file di definizione per un replica set richiede un **selector** (figlio di **spec**). Questa sezione aiuta il replicaSet a identificare **quali pods ricadono sotto di essa**
    
    Ma perchè dovrei specificare quali pod rientrano se abbiamo 
    fornito la loro definizione nel template?

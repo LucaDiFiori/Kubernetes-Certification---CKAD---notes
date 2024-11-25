@@ -1,24 +1,24 @@
 {
   "main": {
-    "id": "4c34f74733426603",
+    "id": "deea9d84bf172803",
     "type": "split",
     "children": [
       {
-        "id": "9f9f9ad09d22ed1b",
+        "id": "a9d607995e8dc49a",
         "type": "tabs",
         "children": [
           {
-            "id": "a98f22204e9a7fd6",
+            "id": "85dc5374f9207e3e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. COnfigurations/3.1 Define, build and modify container images.md",
+                "file": "2.Core Concepts/Prerequisiti/NAMESPACE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.1 Define, build and modify container images"
+              "title": "NAMESPACE"
             }
           }
         ]
@@ -27,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "77dfe9dd3d66c940",
+    "id": "7b46ff77994fb209",
     "type": "split",
     "children": [
       {
-        "id": "0f3dd2907f46cd07",
+        "id": "856c408aaf02accd",
         "type": "tabs",
         "children": [
           {
-            "id": "8462599b6cfede67",
+            "id": "2ff4925e866a5120",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -47,12 +47,12 @@
             }
           },
           {
-            "id": "4b46462000791bf4",
+            "id": "36088f524db0b967",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "kubelet",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -60,40 +60,40 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Ricerca"
+              "title": "Search"
             }
           },
           {
-            "id": "3b612f419b60e419",
+            "id": "ded5f99783ad19cf",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Segnalibri"
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 306.5
   },
   "right": {
-    "id": "d04ca87ea3b3bb46",
+    "id": "a8b79e598679e8c0",
     "type": "split",
     "children": [
       {
-        "id": "a5504cf4da46f73f",
+        "id": "85db05ac0a53047a",
         "type": "tabs",
         "children": [
           {
-            "id": "f67ecd217e71a97b",
+            "id": "74d9e730b40fbb00",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2.Core Concepts/Prerequisiti/NAMESPACE.md",
+                "file": "Introduction/CONTAINER.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,25 +103,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Riferimenti a NAMESPACE"
+              "title": "Backlinks for CONTAINER"
             }
           },
           {
-            "id": "4e024c8b8105d162",
+            "id": "bbd460bffef244f3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2.Core Concepts/Prerequisiti/NAMESPACE.md",
+                "file": "Introduction/CONTAINER.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Collegamenti in uscita da NAMESPACE"
+              "title": "Outgoing links from CONTAINER"
             }
           },
           {
-            "id": "8142de514d6570ab",
+            "id": "8e54b97943b596ff",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -130,19 +130,19 @@
                 "useHierarchy": true
               },
               "icon": "lucide-tags",
-              "title": "Etichette"
+              "title": "Tags"
             }
           },
           {
-            "id": "194c13b7ac123446",
+            "id": "ae4d78bf7700ea0b",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "2.Core Concepts/Prerequisiti/NAMESPACE.md"
+                "file": "Introduction/CONTAINER.md"
               },
               "icon": "lucide-list",
-              "title": "Struttura di NAMESPACE"
+              "title": "Outline of CONTAINER"
             }
           }
         ]
@@ -162,25 +162,47 @@
       "command-palette:Apri riquadro comandi": false
     }
   },
-  "active": "a98f22204e9a7fd6",
+  "active": "85dc5374f9207e3e",
   "lastOpenFiles": [
-    "DOCKERFILE.md",
-    "3. COnfigurations/3.1 Define, build and modify container images.md",
-    "2.Core Concepts/Prerequisiti/KUBECTL - COMMAND LINE TOOL.md",
-    "2.Core Concepts/Prerequisiti/SELECTORS.md",
-    "2.Core Concepts/Prerequisiti/IMMAGINE.md",
-    "3. COnfigurations",
-    "2.Core Concepts/Prerequisiti/SVC -SERVICE.md",
+    "Pasted image 20241122122128.png",
+    "Pasted image 20241122121902.png",
+    "Pasted image 20241122121858.png",
+    "Pasted image 20241122121835.png",
     "2.Core Concepts/Prerequisiti/NAMESPACE.md",
-    "2.Core Concepts/2.2 YAML in Kubernetes.md",
-    "2.Core Concepts/Prerequisiti/RUNTIME.md",
-    "2.Core Concepts/Prerequisiti/NODE.md",
-    "2.Core Concepts/Prerequisiti/YAML.md",
-    "2.Core Concepts/Prerequisiti/DNS.md",
-    "2.Core Concepts/Prerequisiti/REPLICASET.md",
+    "img/Pasted image 20241122120521.png",
+    "img/Pasted image 20241122115607.png",
+    "img/Pasted image 20241122115319.png",
+    "img/Pasted image 20241122113742.png",
+    "img/Pasted image 20241122112759.png",
+    "img/Pasted image 20241122111612.png",
+    "2.Core Concepts/Prerequisiti/DEPLOYMENTS.md",
     "2.Core Concepts/Prerequisiti/PODS.md",
-    "2.Core Concepts/img/Pasted image 20241122133623.png",
-    "2.Core Concepts/img/Pasted image 20241122131752.png",
-    "2.Core Concepts/img/Pasted image 20241122131430.png"
+    "2.Core Concepts/Prerequisiti/NODE.md",
+    "2.Core Concepts/Prerequisiti/KUBECTL - COMMAND LINE TOOL.md",
+    "img/Pasted image 20241120161716.png",
+    "2.Core Concepts/Prerequisiti/REPLICASET.md",
+    "2.Core Concepts/Prerequisiti/IMMAGINE.md",
+    "0.Prerequisiti.md",
+    "2.Core Concepts/2.2 YAML in Kubernetes.md",
+    "2.Core Concepts/Prerequisiti/KUBERNETES CONTROLLERS.md",
+    "2.Core Concepts/Prerequisiti/Control Plane.md",
+    "2.Core Concepts/2.3 Pods with YAML.md",
+    "2.Core Concepts/Prerequisiti/YAML.md",
+    "2.Core Concepts/2.1 Docker vs ContainerD.md",
+    "2.Core Concepts/Prerequisiti/CONTAINER.md",
+    "2.Core Concepts/Prerequisiti/COMPONENTI.md",
+    "img",
+    "2.Core Concepts/Prerequisiti/KUBELET.md",
+    "1.Introduction/INTRODUZIONE A KUBERNATES.md",
+    "2.Core Concepts/Prerequisiti/LAYER.md",
+    "2.Core Concepts/Prerequisiti/CLUSTER.md",
+    "2.Core Concepts/Prerequisiti/RUNTIME.md",
+    "kublet.md",
+    "2.Core Concepts/1.Kubernetes Architecture.md",
+    "Master Node.md",
+    "2.Core Concepts/Prerequisiti",
+    "2.Core Concepts",
+    "IMMAGINE.md",
+    "1.Introduction"
   ]
 }
