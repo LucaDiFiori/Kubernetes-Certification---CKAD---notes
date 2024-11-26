@@ -15,15 +15,18 @@ Il Dockerfile ti permette di:
 
 ***
 ### **Struttura di base di un Dockerfile**
+![[Pasted image 20241126094630.png]]
+- Ogni Immagine docker **deve essere basata su un'altra immagine** (Solitamente un sistema operativo oppure un'altra immagine create in precedenza basata su un OS)
 
-Un Dockerfile è composto da **istruzioni** che Docker esegue in sequenza. Ecco le più comuni:
+
+- Un Dockerfile è composto da **istruzioni - argomento** che Docker esegue in sequenza. Le **istruzioni** più comuni sono:
 
 1. **`FROM`**: Specifica l'immagine di base da cui partire. Ad esempio:
 ```DOCKERFILE
     `FROM ubuntu:20.04`
     ```
     
-2. **`RUN`**: Esegue comandi durante la costruzione dell'immagine, come l'installazione di software:
+2. **`RUN`**: **Esegue comandi** durante la costruzione dell'immagine, come l'installazione di software:
 ```DOCKERFILE
     `RUN apt-get update && apt-get install -y nginx`
 ```
@@ -84,4 +87,42 @@ Un Dockerfile è composto da **istruzioni** che Docker esegue in sequenza. Ecco 
 - **`RUN`**: Esegue comandi durante la **costruzione** dell'immagine.
 - **`CMD`**: Definisce il comando predefinito da eseguire quando il container parte (ma può essere sovrascritto).
 - **`ENTRYPOINT`**: Simile a `CMD`, ma meno flessibile, viene sempre eseguito come comando principale del container.
-   
+
+
+
+
+***
+### Architettura a strati
+Quando Docker *builda* le immagini, lo fa con un'architettura stratificata:
+Ogni linea del file crea uno nuovo livello nell'immagine con solo le  modifiche che l'istruzione prevede.
+
+![[Pasted image 20241126095636.png]]
+
+Poichè ogni livello memorizza solo le modifiche dal livello precedente, questo si riflette anche nelle dimensioni: AL crescere degli strati crescerà il peso dell'immagine.
+
+Attraverso il comando **history** posso vedere i vari strati con le info correlate:
+
+  ```DOCKERFILE
+   docker history nome
+   ```
+
+
+
+
+***
+### Fail
+Grazie all'architettura a stratificata, se uno degli strati fallisce durante la fase di build, rilanciando il comando **docker build ...**, la costruzione ricomincerà dallo strato mancante 
+
+![[Pasted image 20241126100336.png]]
+
+
+La stessa cosa vale nel caso in cui andassimo ad **aggiungere altri strati**: Gli altri non verrebbero sicostruiti da capo
+
+
+
+
+
+
+
+
+
