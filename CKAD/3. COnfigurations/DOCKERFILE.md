@@ -1,5 +1,7 @@
 Un **Dockerfile** è un file di testo che contiene una serie di istruzioni per creare un'immagine Docker. È la "ricetta" che Docker utilizza per costruire un'immagine personalizzata, che può essere successivamente eseguita come un container.
 
+Ogni Immagine docker **deve essere basata su un'altra immagine** (Solitamente un sistema operativo oppure un'altra immagine create in precedenza basata su un OS)
+
 
 
 ---
@@ -16,8 +18,6 @@ Il Dockerfile ti permette di:
 ***
 ### **Struttura di base di un Dockerfile**
 ![[Pasted image 20241126094630.png]]
-- Ogni Immagine docker **deve essere basata su un'altra immagine** (Solitamente un sistema operativo oppure un'altra immagine create in precedenza basata su un OS)
-
 
 - Un Dockerfile è composto da **istruzioni - argomento** che Docker esegue in sequenza. Le **istruzioni** più comuni sono:
 

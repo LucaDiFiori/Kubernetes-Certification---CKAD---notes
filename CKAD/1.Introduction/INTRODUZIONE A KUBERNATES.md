@@ -16,7 +16,7 @@ Kubernetes è una piattaforma open-source progettata per automatizzare la gestio
    
 6. **[[SERVICE]]**: Un _service_ espone un set di pod come servizio di rete unico. Fornisce un endpoint stabile per accedere ai pod, anche se l'indirizzo IP del pod cambia. I _service_ facilitano la comunicazione tra i vari componenti di un'applicazione
    
-7. **[[CONFIGMAP]] e [[SECRET]]**: _ConfigMap_ viene utilizzato per gestire configurazioni senza doverle modificare nei pod, mentre _Secret_ serve per gestire informazioni sensibili come credenziali o chiavi API in modo più sicuro rispetto ai ConfigMap.
+7. **[[3.5 CONFIGMAP]] e [[3.6 SECRET]]**: _ConfigMap_ viene utilizzato per gestire configurazioni senza doverle modificare nei pod, mentre _Secret_ serve per gestire informazioni sensibili come credenziali o chiavi API in modo più sicuro rispetto ai ConfigMap.
    
 8. **[[INGRESS]]**:  Un _ingress_ è un oggetto di Kubernetes che gestisce l'accesso esterno ai servizi del cluster, solitamente tramite HTTP o HTTPS. Permette di configurare regole per il bilanciamento del carico e la gestione di nomi di dominio.
    
