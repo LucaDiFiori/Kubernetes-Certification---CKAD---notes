@@ -102,7 +102,7 @@ In questo esempio, per collegare la web app appartenente a *default* con il db s
 mysql.connect("db-service.dev.svc.cluster.local")
 ```
 
-E' possibile farlo perche quando il servizio viene creato, una voce [[DNS]] è aggiunta automaticamente.
+E' possibile farlo perche quando il servizio viene creato, una voce [[2.Core Concepts/Prerequisiti/DNS]] è aggiunta automaticamente.
 
 - CLUSTER.LOCAL: Osservando il nome del DNS sel servizio, l'ultima parte rappresenta il nome dominio predefinito del cluster Kubernetes.
 

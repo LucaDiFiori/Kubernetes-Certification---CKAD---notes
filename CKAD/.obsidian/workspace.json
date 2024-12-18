@@ -4,35 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "e74cde3e4210fe1a",
+        "id": "c5f6ebeaf27afb52",
         "type": "tabs",
         "children": [
           {
-            "id": "b4f7320485c88c07",
+            "id": "efa0603af4b29516",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. COnfigurations/3.11 RESOURCE REQUIREMENTS.md",
+                "file": "7. SERVICES & NETWORKING/7.2 Ingress Networking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.11 RESOURCE REQUIREMENTS"
+              "title": "7.2 Ingress Networking"
             }
           },
           {
-            "id": "9699cff4d9450d4c",
+            "id": "4f36d7db552aa6d3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. COnfigurations/3.12 TAINTS and TOLERATIONS.md",
+                "file": "7. SERVICES & NETWORKING/7.2.1 Rewrite-target Option.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3.12 TAINTS and TOLERATIONS"
+              "title": "7.2.1 Rewrite-target Option"
             }
           }
         ],
@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#Esempi",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -92,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "d04ca87ea3b3bb46",
@@ -177,44 +177,53 @@
       "command-palette:Apri riquadro comandi": false
     }
   },
-  "active": "9699cff4d9450d4c",
+  "active": "8462599b6cfede67",
   "lastOpenFiles": [
-    "3. COnfigurations/3.11 RESOURCE REQUIREMENTS.md",
-    "3. COnfigurations/3.12 TAINTS and TOLERATIONS.md",
-    "3. COnfigurations/img/Pasted image 20241202153430.png",
-    "3. COnfigurations/3.10 SERVICE ACCOUNT.md",
-    "3. COnfigurations/img/Pasted image 20241202121629.png",
-    "3. COnfigurations/img/Pasted image 20241202121202.png",
-    "3. COnfigurations/img/Pasted image 20241202121014.png",
-    "3. COnfigurations/img/Pasted image 20241202115250.png",
-    "3. COnfigurations/img/Pasted image 20241202114911.png",
-    "3. COnfigurations/img/Pasted image 20241202114312.png",
-    "3. COnfigurations/img/Pasted image 20241202113838.png",
-    "3. COnfigurations/img/Pasted image 20241202111215.png",
-    "3. COnfigurations/img/Pasted image 20241202110603.png",
-    "3. COnfigurations/3.3 CMD - ARGUMENTS in Pods (Kubernetes).md",
-    "3. COnfigurations/3.9 SECURITY in Kubernetes -Configurare le impostazioni di sicurezza nei container su Kubernetes.md",
-    "3. COnfigurations/3.8 SECURITY in Docker.md",
-    "3. COnfigurations/COMANDI PER I CONTAINER DA KUBERNETES.md",
+    "7. SERVICES & NETWORKING/7.2 Ingress Networking.md",
+    "7. SERVICES & NETWORKING/7.2.1 Rewrite-target Option.md",
+    "7. SERVICES & NETWORKING/DNS (Domain Name System).md",
+    "2.Core Concepts/Prerequisiti/DNS.md",
+    "7. SERVICES & NETWORKING/URL.md",
+    "7. SERVICES & NETWORKING/hostname.md",
+    "7. SERVICES & NETWORKING/img/Pasted image 20241217160455.png",
+    "7. SERVICES & NETWORKING/img/Pasted image 20241217155758.png",
+    "7. SERVICES & NETWORKING/img/Pasted image 20241217152753.png",
+    "7. SERVICES & NETWORKING/img/Pasted image 20241217151255.png",
+    "7. SERVICES & NETWORKING/img/Pasted image 20241217150148.png",
+    "Pasted image 20241217151142.png",
+    "7. SERVICES & NETWORKING/img/Pasted image 20241217141638.png",
+    "7. SERVICES & NETWORKING/img/Pasted image 20241217134817.png",
+    "7. SERVICES & NETWORKING/img/Pasted image 20241217145800.png",
+    "7. SERVICES & NETWORKING/img/Pasted image 20241217145508.png",
+    "7. SERVICES & NETWORKING/7.1 SERVICES.md",
+    "7. SERVICES & NETWORKING/7.1.3 Cluster IP.md",
+    "7. SERVICES & NETWORKING/7.1.2  NodePort.md",
+    "7. SERVICES & NETWORKING/img",
+    "6. POD DESIGN/6.6 JOBS.md",
+    "6. POD DESIGN/6.7 CRONJOBS.md",
+    "7. SERVICES & NETWORKING",
+    "5. Observability/5.3 CONTAINER LOGGING.md",
+    "6. POD DESIGN/6.5 DEPLOYMENT STRATEGY - CANARY.md",
+    "6. POD DESIGN/6.4 DEPLOYMENT STRATEGY - BLUE  GREEN.md",
+    "6. POD DESIGN/6.3 Processo - Uptading a Deployment.md",
+    "6. POD DESIGN/6.2 ROLLING UPDATES and ROLLBACKS in Deployments.md",
+    "6. POD DESIGN/6.1 LABELS, SELECTORS and ANNOTATIONS.md",
+    "5. Observability/5.4 MONITOR and DEBUG APPLICATIONS.md",
+    "6. POD DESIGN/img",
+    "6. POD DESIGN",
+    "5. Observability/5.1 READINESS and LIVENESS PROBES.md",
+    "5. Observability/5.2 LIVENESS PROBES.md",
+    "5. Observability/img",
+    "4. Multi-container Pod/4.2 Init Container.md",
+    "4. Multi-container Pod/4.1Multi-COntainer Pods.md",
+    "5. Observability/5.1 READINESS and LIVENESS PROBES",
+    "5. Observability",
+    "3. COnfigurations/3.14 NODE AFFINITY.md",
     "3. COnfigurations/COMANDI DOCKER.md",
-    "3. COnfigurations/3.2 CMD - ARGUMENTS - ENTRY POINTS in  Containers (Docker).md",
-    "3. COnfigurations/3.5 CONFIGMAP.md",
-    "3. COnfigurations/3.4 ENV VARIABLES in Kubernetes.md",
-    "3. COnfigurations/DOCKERFILE.md",
-    "2.Core Concepts/Prerequisiti/PODS.md",
-    "2.Core Concepts/Prerequisiti/REPLICASET.md",
-    "2.Core Concepts/Prerequisiti/RUNTIME.md",
-    "2.Core Concepts/Prerequisiti/SELECTORS.md",
-    "2.Core Concepts/Prerequisiti/SVC -SERVICE.md",
-    "2.Core Concepts/2.1 Docker vs ContainerD.md",
-    "2.Core Concepts/2.2 YAML in Kubernetes.md",
-    "2.Core Concepts/2.3 Pods with YAML.md",
-    "3. COnfigurations/3.7 SECRETS - Encrypting Secret Data at Rest.md",
-    "3. COnfigurations/3.6 SECRET.md",
-    "3. COnfigurations/3.1 Define, build and modify container images.md",
-    "2.Core Concepts/Prerequisiti/KUBECTL - COMMAND LINE TOOL.md",
-    "2.Core Concepts/Prerequisiti/IMMAGINE.md",
-    "3. COnfigurations/img",
-    "3. COnfigurations"
+    "4. Multi-container Pod",
+    "4. Multi",
+    "3. COnfigurations/3.13 NODE SELECTORS.md",
+    "3. COnfigurations/3.12 TAINTS and TOLERATIONS.md",
+    "3. COnfigurations/img"
   ]
 }

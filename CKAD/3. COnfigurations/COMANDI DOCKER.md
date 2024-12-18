@@ -94,7 +94,6 @@ docker run --entrypoint [COMANDO] [IMMAGINE] [ARGOMENTI]
 
 
 
-
 - #### 2. Elencare i container attivi
 ```bash
 docker ps
