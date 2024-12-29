@@ -4,39 +4,81 @@
     "type": "split",
     "children": [
       {
-        "id": "c5f6ebeaf27afb52",
+        "id": "97c98a9c28944320",
         "type": "tabs",
         "children": [
           {
-            "id": "efa0603af4b29516",
+            "id": "4b799291c438ba0d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7. SERVICES & NETWORKING/7.2 Ingress Networking.md",
+                "file": "9. SECURITY/9.1 Authentication, Authorization and Admission Control.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7.2 Ingress Networking"
+              "title": "9.1 Authentication, Authorization and Admission Control"
             }
           },
           {
-            "id": "4f36d7db552aa6d3",
+            "id": "368dfe3287d23b97",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "7. SERVICES & NETWORKING/7.2.1 Rewrite-target Option.md",
+                "file": "9. SECURITY/9.3 KubeConfig.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7.2.1 Rewrite-target Option"
+              "title": "9.3 KubeConfig"
+            }
+          },
+          {
+            "id": "d081aa3e2b0f7c35",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "9. SECURITY/9.4 API Groups.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "9.4 API Groups"
+            }
+          },
+          {
+            "id": "e8fda341d410eaae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "9. SECURITY/9.5 Authorization.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "9.5 Authorization"
+            }
+          },
+          {
+            "id": "cde4370aba2da246",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "9. SECURITY/9.6 RBAC - Role Based Access Controls.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "9.6 RBAC - Role Based Access Controls"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -179,22 +221,37 @@
   },
   "active": "8462599b6cfede67",
   "lastOpenFiles": [
-    "7. SERVICES & NETWORKING/7.2 Ingress Networking.md",
+    "9. SECURITY/9.5 Authorization.md",
+    "9. SECURITY/9.6 RBAC - Role Based Access Controls.md",
+    "9. SECURITY/img/Pasted image 20241229123558.png",
+    "9. SECURITY/img/Pasted image 20241229122808.png",
+    "9. SECURITY/img/Pasted image 20241229122011.png",
+    "9. SECURITY/img/Pasted image 20241229121325.png",
+    "9. SECURITY/9.4 API Groups.md",
+    "9. SECURITY/img/Pasted image 20241229113425.png",
+    "9. SECURITY/img/Pasted image 20241229112708.png",
+    "Pasted image 20241229112423.png",
+    "9. SECURITY/img/Pasted image 20241229112309.png",
+    "9. SECURITY/9.3 KubeConfig.md",
+    "9. SECURITY/9.1 Authentication, Authorization and Admission Control.md",
+    "9. SECURITY/9.2 Authentication.md",
+    "9. SECURITY/img/Pasted image 20241225132519.png",
+    "9. SECURITY/img/Pasted image 20241225132224.png",
+    "8. VOLUMES - STATE PERSISTANCE/8.3 Persistent Volume Claims (PVC).md",
+    "9. SECURITY/img",
+    "9. SECURITY",
+    "8. VOLUMES - STATE PERSISTANCE/8.1 - Volumes.md",
+    "8. VOLUMES - STATE PERSISTANCE/8.2 Persistent Volumes.md",
+    "8. VOLUMES - STATE PERSISTANCE/img",
+    "7. SERVICES & NETWORKING/7.3 Network Policies.md",
+    "8. VOLUMES - STATE PERSISTANCE",
+    "VOLUMES - STATE PERSISTANCE",
     "7. SERVICES & NETWORKING/7.2.1 Rewrite-target Option.md",
+    "7. SERVICES & NETWORKING/7.2 Ingress Networking.md",
     "7. SERVICES & NETWORKING/DNS (Domain Name System).md",
     "2.Core Concepts/Prerequisiti/DNS.md",
     "7. SERVICES & NETWORKING/URL.md",
     "7. SERVICES & NETWORKING/hostname.md",
-    "7. SERVICES & NETWORKING/img/Pasted image 20241217160455.png",
-    "7. SERVICES & NETWORKING/img/Pasted image 20241217155758.png",
-    "7. SERVICES & NETWORKING/img/Pasted image 20241217152753.png",
-    "7. SERVICES & NETWORKING/img/Pasted image 20241217151255.png",
-    "7. SERVICES & NETWORKING/img/Pasted image 20241217150148.png",
-    "Pasted image 20241217151142.png",
-    "7. SERVICES & NETWORKING/img/Pasted image 20241217141638.png",
-    "7. SERVICES & NETWORKING/img/Pasted image 20241217134817.png",
-    "7. SERVICES & NETWORKING/img/Pasted image 20241217145800.png",
-    "7. SERVICES & NETWORKING/img/Pasted image 20241217145508.png",
     "7. SERVICES & NETWORKING/7.1 SERVICES.md",
     "7. SERVICES & NETWORKING/7.1.3 Cluster IP.md",
     "7. SERVICES & NETWORKING/7.1.2  NodePort.md",
@@ -207,23 +264,8 @@
     "6. POD DESIGN/6.4 DEPLOYMENT STRATEGY - BLUE  GREEN.md",
     "6. POD DESIGN/6.3 Processo - Uptading a Deployment.md",
     "6. POD DESIGN/6.2 ROLLING UPDATES and ROLLBACKS in Deployments.md",
-    "6. POD DESIGN/6.1 LABELS, SELECTORS and ANNOTATIONS.md",
-    "5. Observability/5.4 MONITOR and DEBUG APPLICATIONS.md",
     "6. POD DESIGN/img",
     "6. POD DESIGN",
-    "5. Observability/5.1 READINESS and LIVENESS PROBES.md",
-    "5. Observability/5.2 LIVENESS PROBES.md",
-    "5. Observability/img",
-    "4. Multi-container Pod/4.2 Init Container.md",
-    "4. Multi-container Pod/4.1Multi-COntainer Pods.md",
-    "5. Observability/5.1 READINESS and LIVENESS PROBES",
-    "5. Observability",
-    "3. COnfigurations/3.14 NODE AFFINITY.md",
-    "3. COnfigurations/COMANDI DOCKER.md",
-    "4. Multi-container Pod",
-    "4. Multi",
-    "3. COnfigurations/3.13 NODE SELECTORS.md",
-    "3. COnfigurations/3.12 TAINTS and TOLERATIONS.md",
-    "3. COnfigurations/img"
+    "5. Observability/img"
   ]
 }
